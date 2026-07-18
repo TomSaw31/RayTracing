@@ -19,7 +19,7 @@
 <area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="203,395,255,435,252,439,199,399"/>
 <area shape="poly" id="edge10_Node000009_Node000004" title=" " alt="" coords="315,94,345,100,380,111,413,127,443,150,460,180,467,211,462,213,455,182,439,154,411,131,378,116,344,105,314,99"/>
 <area shape="poly" id="edge21_Node000009_Node000005" title=" " alt="" coords="264,106,208,146,205,142,261,102"/>
-<area shape="rect" id="Node000010" href="$hit__record_8cppm.html" title="Data structure used to store a hit between a ray and a hittable object." alt="" coords="341,152,428,177"/>
+<area shape="rect" id="Node000010" href="$hit__record_8cppm.html" title="Data structure to store a hit between a ray and a hittable object." alt="" coords="341,152,428,177"/>
 <area shape="poly" id="edge11_Node000009_Node000010" title=" " alt="" coords="297,102,357,142,354,147,294,106"/>
 <area shape="rect" id="Node000011" href="$ray_8cppm.html" title="A 3D ray vector class." alt="" coords="297,225,339,251"/>
 <area shape="poly" id="edge22_Node000009_Node000011" title=" " alt="" coords="284,104,314,211,309,213,279,105"/>

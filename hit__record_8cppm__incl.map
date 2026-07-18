@@ -1,5 +1,5 @@
 <map id="src/hit_record.cppm" name="src/hit_record.cppm">
-<area shape="rect" id="Node000001" title="Data structure used to store a hit between a ray and a hittable object." alt="" coords="71,5,222,31"/>
+<area shape="rect" id="Node000001" title="Data structure to store a hit between a ray and a hittable object." alt="" coords="71,5,222,31"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="24,79,101,104"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="135,33,89,72,85,67,131,29"/>
 <area shape="rect" id="Node000003" href="$ray_8cppm.html" title="A 3D ray vector class." alt="" coords="125,79,168,104"/>

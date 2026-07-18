@@ -6,7 +6,7 @@
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="205,30,220,78,248,193,268,284,263,285,243,194,215,79,200,32"/>
 <area shape="rect" id="Node000006" href="$random_8cppm.html" title="A module used to create efficient randomness based on the Mersenne Twister algorithm." alt="" coords="5,299,77,324"/>
 <area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="129,31,82,48,61,62,43,80,30,105,21,131,18,160,17,188,24,242,35,285,30,286,19,243,12,189,12,159,16,130,25,103,39,77,57,58,79,44,128,26"/>
-<area shape="rect" id="Node000008" href="$hit__record_8cppm.html" title="Data structure used to store a hit between a ray and a hittable object." alt="" coords="73,79,159,104"/>
+<area shape="rect" id="Node000008" href="$hit__record_8cppm.html" title="Data structure to store a hit between a ray and a hittable object." alt="" coords="73,79,159,104"/>
 <area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="187,33,142,72,138,67,184,29"/>
 <area shape="rect" id="Node000010" href="$ray_8cppm.html" title="A 3D ray vector class." alt="" coords="177,152,220,177"/>
 <area shape="poly" id="edge17_Node000001_Node000010" title=" " alt="" coords="201,31,201,138,196,138,196,31"/>
