@@ -310,7 +310,7 @@ export vec3 random_unit_vector() {
  */
 export vec3 random_in_unit_disk() {
     while (true) {
-        auto p = vec3{std::rand() / (RAND_MAX + 1.0), std::rand() / (RAND_MAX + 1.0), 0};
+        auto p = vec3{random_double(), random_double(), 0};
         if (p.length_squared() < 1) {
             return p;
         }

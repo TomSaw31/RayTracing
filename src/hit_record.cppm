@@ -1,6 +1,6 @@
 /**
  * @file hit_record.cppm 
- * @brief Data structure used to store a hit between a ray and a hittable object
+ * @brief Data structure to store a hit between a ray and a hittable object
  */
 
 module;

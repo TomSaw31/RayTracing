@@ -11,6 +11,7 @@ module;
 #include <vector>
 #include <execution>
 #include <numeric>
+#include <mutex>
 
 export module camera;
 
@@ -55,6 +56,7 @@ export class camera {
             std::iota(line_indices.begin(), line_indices.end(), 0);
 
             std::atomic<int> lines_remaining{image_height};
+            std::mutex clog_mutex;
 
             std::for_each(std::execution::par, line_indices.begin(), line_indices.end(), [&](int j) {
                 for(int i = 0; i < image_width; ++i) {
@@ -66,7 +68,10 @@ export class camera {
                     image_buffer[j * image_width + i] = pixel_samples_scale * pixel_color;
                 }
                 int remaining = --lines_remaining;
-                std::clog << "\rScanlines remaining: " << remaining << ' ' << std::flush;
+                {
+                    std::lock_guard<std::mutex> lock(clog_mutex);
+                    std::clog << "\rScanlines remaining: " << remaining << "    " << std::flush;
+                }
             });
             
             std::println(std::cout, "P3\n{} {}\n255", image_width, image_height);

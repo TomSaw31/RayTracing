@@ -1,5 +1,4 @@
 build/
-renders/*.ppm
 .vscode/
 docs/
 html/
