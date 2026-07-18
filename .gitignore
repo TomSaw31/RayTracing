@@ -1,0 +1,8 @@
+build/
+renders/*.ppm
+.vscode/
+docs/
+html/
+latex/
+.DS_Store
+Thumbs.db
