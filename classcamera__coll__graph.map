@@ -1,0 +1,5 @@
+<map id="camera" name="camera">
+<area shape="rect" id="Node000001" title="Represents the camera (i.e the rendering viewpoint) and supports basic rendering operations." alt="" coords="5,123,76,148"/>
+<area shape="rect" id="Node000002" href="$classvec3.html" title="Represents a 3D vector or point in space." alt="" coords="14,5,67,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="43,44,43,123,38,123,38,44"/>
+</map>

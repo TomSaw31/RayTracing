@@ -1,0 +1,28 @@
+<map id="src/color.cppm" name="src/color.cppm">
+<area shape="rect" id="Node000001" title="Multiple functions for color handling during rendering." alt="" coords="137,5,253,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,225,68,251"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="152,33,111,51,92,64,76,80,58,112,46,148,39,212,34,212,41,147,53,110,72,77,89,60,108,47,149,28"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="171,152,251,177"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="199,31,211,138,206,139,194,31"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="311,79,363,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="219,28,303,70,300,75,217,33"/>
+<area shape="rect" id="Node000005" href="$interval_8cppm.html" title="A class for math related interval operations." alt="" coords="86,79,158,104"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="185,33,146,71,142,67,181,29"/>
+<area shape="rect" id="Node000009" href="$vec3_8cppm.html" title="A 3D vector class for linear algebra operations." alt="" coords="233,79,286,104"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="208,29,242,67,238,70,204,33"/>
+<area shape="rect" id="Node000006" href="$utils_8cppm.html" title="Some useful math functions and constants." alt="" coords="97,152,147,177"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="125,104,125,138,119,138,119,104"/>
+<area shape="poly" id="edge6_Node000006_Node000002" title=" " alt="" coords="110,179,63,219,59,214,107,175"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="93,225,151,251"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="125,178,125,212,119,212,119,178"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="176,225,255,251"/>
+<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="139,175,191,215,188,219,135,179"/>
+<area shape="poly" id="edge10_Node000009_Node000003" title=" " alt="" coords="254,106,229,142,224,139,249,103"/>
+<area shape="poly" id="edge12_Node000009_Node000006" title=" " alt="" coords="238,106,158,148,155,143,236,102"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="371,152,427,177"/>
+<area shape="poly" id="edge11_Node000009_Node000010" title=" " alt="" coords="283,102,366,143,363,148,281,106"/>
+<area shape="rect" id="Node000011" href="$random_8cppm.html" title="A module used to create efficient randomness based on the Mersenne Twister algorithm." alt="" coords="275,152,347,177"/>
+<area shape="poly" id="edge13_Node000009_Node000011" title=" " alt="" coords="270,103,297,139,293,142,266,106"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="279,225,351,251"/>
+<area shape="poly" id="edge14_Node000011_Node000012" title=" " alt="" coords="315,178,317,212,311,212,309,178"/>
+</map>

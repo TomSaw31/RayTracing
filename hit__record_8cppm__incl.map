@@ -1,0 +1,26 @@
+<map id="src/hit_record.cppm" name="src/hit_record.cppm">
+<area shape="rect" id="Node000001" title="Data structure used to store a hit between a ray and a hittable object." alt="" coords="71,5,222,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="24,79,101,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="135,33,89,72,85,67,131,29"/>
+<area shape="rect" id="Node000003" href="$ray_8cppm.html" title="A 3D ray vector class." alt="" coords="125,79,168,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="149,31,149,65,144,65,144,31"/>
+<area shape="rect" id="Node000004" href="$vec3_8cppm.html" title="A 3D vector class for linear algebra operations." alt="" coords="149,152,203,177"/>
+<area shape="poly" id="edge12_Node000001_Node000004" title=" " alt="" coords="158,29,171,51,183,78,186,109,184,139,178,138,181,109,177,79,167,53,153,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="154,103,168,138,164,140,149,105"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="5,225,85,251"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="156,180,80,221,77,216,154,175"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="109,225,165,251"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="172,179,152,215,148,212,167,176"/>
+<area shape="rect" id="Node000007" href="$utils_8cppm.html" title="Some useful math functions and constants." alt="" coords="189,225,240,251"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="185,176,204,212,200,215,180,179"/>
+<area shape="rect" id="Node000011" href="$random_8cppm.html" title="A module used to create efficient randomness based on the Mersenne Twister algorithm." alt="" coords="317,225,389,251"/>
+<area shape="poly" id="edge10_Node000004_Node000011" title=" " alt="" coords="204,174,313,218,311,223,202,179"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="71,299,134,324"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="198,253,134,293,131,289,195,248"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="159,299,217,324"/>
+<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="213,252,200,287,195,285,208,250"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="242,299,321,324"/>
+<area shape="poly" id="edge9_Node000007_Node000010" title=" " alt="" coords="228,249,263,287,259,290,224,253"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="345,299,417,324"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="360,250,374,285,369,287,355,252"/>
+</map>

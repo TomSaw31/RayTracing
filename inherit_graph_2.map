@@ -1,0 +1,7 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$classhittable.html" title="Represents an object that can be hit by light ray." alt="" coords="5,31,77,56"/>
+<area shape="rect" id="Node000001" href="$classhittable__list.html" title="Represents a list of hittable objects." alt="" coords="125,5,224,31"/>
+<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="90,31,125,25,126,30,91,37"/>
+<area shape="rect" id="Node000002" href="$classsphere.html" title="Represents a simple representation of a sphere to render in a 3D space." alt="" coords="141,55,208,80"/>
+<area shape="poly" id="edge2_Node000000_Node000002" title=" " alt="" coords="91,50,142,59,141,64,90,55"/>
+</map>
