@@ -23,13 +23,23 @@ import material;
 export class sphere : public hittable {
     public:
         /**
-         * @brief Constructs a new sphere
+         * @brief Constructs a new stationary sphere
          *
-         * @param center The center of the sphere
+         * @param static_center The center of the sphere
          * @param radius The radius of the sphere
          * @param mat the material used to render the sphere
          */
-        constexpr sphere(const point3& center, double radius, std::shared_ptr<material> mat) noexcept : center{center}, radius{std::max(0.0, radius)}, mat{std::move(mat)} {}
+        constexpr sphere(const point3& static_center, double radius, std::shared_ptr<material> mat) noexcept : center{static_center, vec3{0,0,0}}, radius{std::max(0.0, radius)}, mat{std::move(mat)} {}
+
+        /**
+         * @brief Constructs a new moving sphere
+         *
+         * @param center1 The initial center position of the sphere
+         * @param center2 The end center position of the sphere
+         * @param radius The radius of the sphere
+         * @param mat the material used to render the sphere
+         */
+        constexpr sphere(const point3& center1, const point3& center2, double radius, std::shared_ptr<material> mat) noexcept : center{center1, center2 - center1}, radius{std::max(0.0, radius)}, mat{std::move(mat)} {}
 
         /**
          * @brief Returns if a ray hit the sphere
@@ -42,7 +52,8 @@ export class sphere : public hittable {
          */
         [[nodiscard]]
         bool hit(const ray& r, interval ray_t, hit_record& rec) const override {
-            vec3 oc = center - r.origin();
+            point3 current_center = center.at(r.time());
+            vec3 oc = current_center - r.origin();
             auto a  = r.direction().length_squared();
             auto h = dot(r.direction(), oc);
             auto c = oc.length_squared() - radius * radius;
@@ -62,7 +73,7 @@ export class sphere : public hittable {
 
             rec.t = root;
             rec.p = r.at(rec.t);
-            vec3 outward_normal = (rec.p - center) / radius;
+            vec3 outward_normal = (rec.p - current_center) / radius;
             rec.set_face_normal(r, outward_normal);
             rec.mat = mat;
 
@@ -70,7 +81,7 @@ export class sphere : public hittable {
         }
 
     private:
-        point3 center;
+        ray center;
         double radius;
         std::shared_ptr<material> mat;
 };

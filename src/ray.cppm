@@ -22,10 +22,19 @@ export class ray {
         /**
          * @brief Returns a new ray
          * 
-         * @param origin the origin of the ray
-         * @param direction the direction of the ray
+         * @param origin The origin of the ray
+         * @param direction The direction of the ray
+         * @param tm The instant during which the ray hit
          */
-        constexpr ray(const point3& origin, const vec3& direction) noexcept : orig{origin}, dir{direction} {}
+        constexpr ray(const point3& origin, const vec3& direction, double time) noexcept : orig{origin}, dir{direction}, tm{time} {}
+
+        /**
+         * @brief Returns a new ray
+         * 
+         * @param origin The origin of the ray 
+         * @param direction The direction of the ray
+         */
+        constexpr ray(const point3& origin, const vec3& direction) : ray{origin, direction, 0} {}
 
         /**
          * @brief Returns the origin component of the ray
@@ -48,6 +57,16 @@ export class ray {
         }
 
         /**
+         * @brief Returns the time component of the ray
+         * 
+         * @return The time component of the ray
+         */
+        [[nodiscard]]
+        constexpr const double time() const {
+            return tm;
+        }
+
+        /**
          * @brief Returns the parametric position of a ray along its trajectory
          * 
          * @param t The parameters that caracterize the position along the ray's trajectory
@@ -61,4 +80,5 @@ export class ray {
     private:
         point3 orig{};
         vec3 dir{};
+        double tm;
 };
