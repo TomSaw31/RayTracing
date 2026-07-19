@@ -101,9 +101,12 @@ Collaboration diagram for sphere:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a8c606cd9022619bda0036585d6ef0648" id="r_a8c606cd9022619bda0036585d6ef0648"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsphere.html#a8c606cd9022619bda0036585d6ef0648">sphere</a> (const <a class="el" href="classvec3.html">point3</a> &amp;center, double radius, std::shared_ptr&lt; <a class="el" href="classmaterial.html">material</a> &gt; mat) noexcept</td></tr>
-<tr class="memdesc:a8c606cd9022619bda0036585d6ef0648"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new sphere.  <br /></td></tr>
-<tr class="separator:a8c606cd9022619bda0036585d6ef0648"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a410f0e1f931049dd2c97209246c9cf6e" id="r_a410f0e1f931049dd2c97209246c9cf6e"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsphere.html#a410f0e1f931049dd2c97209246c9cf6e">sphere</a> (const <a class="el" href="classvec3.html">point3</a> &amp;static_center, double radius, std::shared_ptr&lt; <a class="el" href="classmaterial.html">material</a> &gt; mat) noexcept</td></tr>
+<tr class="memdesc:a410f0e1f931049dd2c97209246c9cf6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new stationary sphere.  <br /></td></tr>
+<tr class="separator:a410f0e1f931049dd2c97209246c9cf6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec699d3410954071ae3e9caeb3bdf08a" id="r_aec699d3410954071ae3e9caeb3bdf08a"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsphere.html#aec699d3410954071ae3e9caeb3bdf08a">sphere</a> (const <a class="el" href="classvec3.html">point3</a> &amp;center1, const <a class="el" href="classvec3.html">point3</a> &amp;center2, double radius, std::shared_ptr&lt; <a class="el" href="classmaterial.html">material</a> &gt; mat) noexcept</td></tr>
+<tr class="memdesc:aec699d3410954071ae3e9caeb3bdf08a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new moving sphere.  <br /></td></tr>
+<tr class="separator:aec699d3410954071ae3e9caeb3bdf08a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae829560b28cd8ad4c47be224adc10c3d" id="r_ae829560b28cd8ad4c47be224adc10c3d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsphere.html#ae829560b28cd8ad4c47be224adc10c3d">hit</a> (const <a class="el" href="classray.html">ray</a> &amp;r, <a class="el" href="classinterval.html">interval</a> ray_t, <a class="el" href="structhit__record.html">hit_record</a> &amp;rec) const override</td></tr>
 <tr class="memdesc:ae829560b28cd8ad4c47be224adc10c3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns if a ray hit the sphere.  <br /></td></tr>
 <tr class="separator:ae829560b28cd8ad4c47be224adc10c3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -128,8 +131,8 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~hittable</b> ()=d
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents a simple representation of a sphere to render in a 3D space. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a8c606cd9022619bda0036585d6ef0648" name="a8c606cd9022619bda0036585d6ef0648"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8c606cd9022619bda0036585d6ef0648">&#9670;&#160;</a></span>sphere()</h2>
+<a id="a410f0e1f931049dd2c97209246c9cf6e" name="a410f0e1f931049dd2c97209246c9cf6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a410f0e1f931049dd2c97209246c9cf6e">&#9670;&#160;</a></span>sphere() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -141,7 +144,7 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~hittable</b> ()=d
           <td class="memname">constexpr sphere::sphere </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classvec3.html">point3</a> &amp;&#160;</td>
-          <td class="paramname"><em>center</em>, </td>
+          <td class="paramname"><em>static_center</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -168,10 +171,69 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~hittable</b> ()=d
 </table>
 </div><div class="memdoc">
 
-<p>Constructs a new sphere. </p>
+<p>Constructs a new stationary sphere. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">center</td><td>The center of the sphere </td></tr>
+    <tr><td class="paramname">static_center</td><td>The center of the sphere </td></tr>
+    <tr><td class="paramname">radius</td><td>The radius of the sphere </td></tr>
+    <tr><td class="paramname">mat</td><td>the material used to render the sphere </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aec699d3410954071ae3e9caeb3bdf08a" name="aec699d3410954071ae3e9caeb3bdf08a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec699d3410954071ae3e9caeb3bdf08a">&#9670;&#160;</a></span>sphere() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr sphere::sphere </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classvec3.html">point3</a> &amp;&#160;</td>
+          <td class="paramname"><em>center1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classvec3.html">point3</a> &amp;&#160;</td>
+          <td class="paramname"><em>center2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>radius</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classmaterial.html">material</a> &gt;&#160;</td>
+          <td class="paramname"><em>mat</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs a new moving sphere. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">center1</td><td>The initial center position of the sphere </td></tr>
+    <tr><td class="paramname">center2</td><td>The end center position of the sphere </td></tr>
     <tr><td class="paramname">radius</td><td>The radius of the sphere </td></tr>
     <tr><td class="paramname">mat</td><td>the material used to render the sphere </td></tr>
   </table>
