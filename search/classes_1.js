@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['dielectric_0',['dielectric',['../classdielectric.html',1,'']]]
+  ['bvh_5fnode_0',['bvh_node',['../classbvh__node.html',1,'']]]
 ];

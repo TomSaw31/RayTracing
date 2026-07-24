@@ -83,11 +83,13 @@ Inheritance diagram for hittable:</div>
 <div class="dyncontent">
 <div class="center"><img src="classhittable__inherit__graph.png" border="0" usemap="#ahittable_inherit__map" alt="Inheritance graph"/></div>
 <map name="ahittable_inherit__map" id="ahittable_inherit__map">
-<area shape="rect" title="Represents an object that can be hit by light ray." alt="" coords="72,5,144,31"/>
-<area shape="rect" href="classhittable__list.html" title="Represents a list of hittable objects." alt="" coords="5,79,104,104"/>
-<area shape="poly" title=" " alt="" coords="93,43,65,80,61,77,89,40"/>
-<area shape="rect" href="classsphere.html" title="Represents a simple representation of a sphere to render in a 3D space." alt="" coords="128,79,195,104"/>
-<area shape="poly" title=" " alt="" coords="127,40,155,77,151,80,123,43"/>
+<area shape="rect" title="Represents an object that can be hit by light ray." alt="" coords="128,5,200,31"/>
+<area shape="rect" href="classbvh__node.html" title="Represents a Bounding Volume Hierarchy (BVH)" alt="" coords="5,79,91,104"/>
+<area shape="poly" title=" " alt="" coords="135,40,68,81,66,76,132,35"/>
+<area shape="rect" href="classhittable__list.html" title="Represents a list of hittable objects." alt="" coords="115,79,213,104"/>
+<area shape="poly" title=" " alt="" coords="167,44,167,79,161,79,161,44"/>
+<area shape="rect" href="classsphere.html" title="Represents a simple representation of a sphere to render in a 3D space." alt="" coords="237,79,304,104"/>
+<area shape="poly" title=" " alt="" coords="194,36,255,76,252,81,191,40"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -112,11 +114,40 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~hittable</b> ()=d
 <tr class="memitem:ad74f3720b6de850be47b14a9e21e1c01" id="r_ad74f3720b6de850be47b14a9e21e1c01"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhittable.html#ad74f3720b6de850be47b14a9e21e1c01">hit</a> (const <a class="el" href="classray.html">ray</a> &amp;r, <a class="el" href="classinterval.html">interval</a> ray_t, <a class="el" href="structhit__record.html">hit_record</a> &amp;rec) const =0</td></tr>
 <tr class="memdesc:ad74f3720b6de850be47b14a9e21e1c01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns if a ray hit the object.  <br /></td></tr>
 <tr class="separator:ad74f3720b6de850be47b14a9e21e1c01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c0ea1ca1a1420a98c0e63d157e53e4c" id="r_a9c0ea1ca1a1420a98c0e63d157e53e4c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classaabb.html">aabb</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhittable.html#a9c0ea1ca1a1420a98c0e63d157e53e4c">bounding_box</a> () const noexcept=0</td></tr>
+<tr class="separator:a9c0ea1ca1a1420a98c0e63d157e53e4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents an object that can be hit by light ray. </p>
 <dl class="section note"><dt>Note</dt><dd>This class is <b>non-copyable</b> to prevent object slicing of derived geometries (like spheres or triangles) when managed polymorphically. Move semantics are supported. </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a9c0ea1ca1a1420a98c0e63d157e53e4c" name="a9c0ea1ca1a1420a98c0e63d157e53e4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c0ea1ca1a1420a98c0e63d157e53e4c">&#9670;&#160;</a></span>bounding_box()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classaabb.html">aabb</a> hittable::bounding_box </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classbvh__node.html#a3253fa491043759dde8cc4e4b33b9e42">bvh_node</a>, and <a class="el" href="classhittable__list.html#afc5035dfc6ef342c1e7d03239d397502">hittable_list</a>.</p>
+
+</div>
+</div>
 <a id="ad74f3720b6de850be47b14a9e21e1c01" name="ad74f3720b6de850be47b14a9e21e1c01"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad74f3720b6de850be47b14a9e21e1c01">&#9670;&#160;</a></span>hit()</h2>
 
@@ -170,7 +201,7 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~hittable</b> ()=d
 <dd>
 false if the ray did not hit the object in the 3D space </dd></dl>
 
-<p>Implemented in <a class="el" href="classhittable__list.html#ac83866480d07afc962f5686dc1866295">hittable_list</a>, and <a class="el" href="classsphere.html#ae829560b28cd8ad4c47be224adc10c3d">sphere</a>.</p>
+<p>Implemented in <a class="el" href="classbvh__node.html#a667e2f4eb58de1c0bd8727cc0dbbda38">bvh_node</a>, <a class="el" href="classhittable__list.html#ac83866480d07afc962f5686dc1866295">hittable_list</a>, and <a class="el" href="classsphere.html#ae829560b28cd8ad4c47be224adc10c3d">sphere</a>.</p>
 
 </div>
 </div>

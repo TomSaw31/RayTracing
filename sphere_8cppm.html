@@ -86,67 +86,74 @@ $(function() {
 <code>import <a class="el" href="material_8cppm.html">material</a>;</code><br />
 <code>import <a class="el" href="interval_8cppm.html">interval</a>;</code><br />
 <code>import <a class="el" href="hittable_8cppm.html">hittable</a>;</code><br />
+<code>import <a class="el" href="aabb_8cppm.html">aabb</a>;</code><br />
 <code>import <a class="el" href="vec3_8cppm.html">vec3</a>;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for sphere.cppm:</div>
 <div class="dyncontent">
 <div class="center"><img src="sphere_8cppm__incl.png" border="0" usemap="#asrc_2sphere_8cppm" alt=""/></div>
 <map name="asrc_2sphere_8cppm" id="asrc_2sphere_8cppm">
-<area shape="rect" title="A 3D sphere gemoetry class." alt="" coords="314,5,443,31"/>
-<area shape="rect" title=" " alt="" coords="488,225,565,251"/>
-<area shape="poly" title=" " alt="" coords="444,20,475,26,507,37,537,53,561,77,570,94,574,112,571,149,559,185,544,215,539,212,554,183,566,148,568,112,565,96,557,80,534,58,505,42,474,31,443,25"/>
-<area shape="rect" title=" " alt="" coords="165,79,225,104"/>
-<area shape="poly" title=" " alt="" coords="350,33,239,76,237,71,348,28"/>
-<area shape="rect" href="material_8cppm.html" title="A material class used for render." alt="" coords="249,79,327,104"/>
-<area shape="poly" title=" " alt="" coords="366,33,315,72,312,68,362,29"/>
-<area shape="rect" href="vec3_8cppm.html" title="A 3D vector class for linear algebra operations." alt="" coords="272,299,325,324"/>
-<area shape="poly" title=" " alt="" coords="314,30,219,50,179,64,155,80,142,108,142,137,153,167,171,196,195,224,222,249,272,289,269,293,218,253,191,227,167,199,148,169,137,138,137,107,151,77,177,59,218,44,313,25"/>
-<area shape="rect" href="interval_8cppm.html" title="A class for math related interval operations." alt="" coords="540,299,612,324"/>
-<area shape="poly" title=" " alt="" coords="444,25,501,38,560,62,588,78,613,98,633,123,648,151,656,195,654,224,646,252,630,275,610,293,606,289,626,271,642,250,649,223,650,195,643,153,629,126,609,102,585,83,558,66,499,43,443,30"/>
-<area shape="rect" href="hittable_8cppm.html" title="Interface to represent an object that can be hit by a ray." alt="" coords="475,79,547,104"/>
-<area shape="poly" title=" " alt="" coords="401,28,478,70,476,74,399,33"/>
-<area shape="rect" title=" " alt="" coords="66,445,129,471"/>
-<area shape="poly" title=" " alt="" coords="250,106,179,129,99,161,63,179,34,198,15,218,8,237,8,312,15,349,31,382,53,411,75,434,71,438,49,415,27,385,10,350,3,313,3,236,10,215,31,194,61,175,97,156,178,124,248,101"/>
-<area shape="rect" href="utils_8cppm.html" title="Some useful math functions and constants." alt="" coords="424,372,475,397"/>
-<area shape="poly" title=" " alt="" coords="292,103,306,168,319,209,337,249,358,282,382,312,428,361,424,364,378,316,353,285,332,252,314,211,301,169,287,105"/>
-<area shape="rect" href="random_8cppm.html" title="A module used to create efficient randomness based on the Mersenne Twister algorithm." alt="" coords="144,372,216,397"/>
-<area shape="poly" title=" " alt="" coords="251,107,209,123,162,149,118,183,100,203,85,226,79,245,80,264,86,283,96,301,124,335,154,362,151,366,120,339,91,304,81,285,74,265,74,245,80,224,95,200,114,179,159,144,207,119,249,102"/>
-<area shape="rect" href="hit__record_8cppm.html" title="Data structure to store a hit between a ray and a hittable object." alt="" coords="427,152,514,177"/>
-<area shape="poly" title=" " alt="" coords="318,102,429,144,427,149,316,107"/>
-<area shape="rect" href="ray_8cppm.html" title="A 3D ray vector class." alt="" coords="347,225,389,251"/>
-<area shape="poly" title=" " alt="" coords="297,103,357,212,353,215,292,106"/>
-<area shape="poly" title=" " alt="" coords="286,105,272,152,270,189,275,225,292,285,286,287,270,226,265,189,267,152,281,103"/>
-<area shape="rect" href="color_8cppm.html" title="Multiple functions for color handling during rendering." alt="" coords="94,225,149,251"/>
-<area shape="poly" title=" " alt="" coords="276,106,220,154,147,218,143,214,217,150,273,102"/>
-<area shape="poly" title=" " alt="" coords="424,397,413,400,339,415,280,425,143,448,142,443,279,419,338,410,411,395,423,392"/>
-<area shape="rect" title=" " alt="" coords="373,445,432,471"/>
-<area shape="poly" title=" " alt="" coords="444,399,420,435,416,432,439,396"/>
-<area shape="rect" title=" " alt="" coords="457,445,535,471"/>
-<area shape="poly" title=" " alt="" coords="459,396,483,432,479,435,455,399"/>
-<area shape="rect" title=" " alt="" coords="153,445,225,471"/>
-<area shape="poly" title=" " alt="" coords="184,397,189,431,183,432,179,398"/>
-<area shape="poly" title=" " alt="" coords="482,176,511,213,507,216,478,179"/>
-<area shape="poly" title=" " alt="" coords="456,180,398,219,395,215,453,175"/>
-<area shape="poly" title=" " alt="" coords="465,179,440,214,403,253,370,276,337,295,335,290,367,272,400,249,436,211,461,176"/>
-<area shape="poly" title=" " alt="" coords="358,253,321,291,317,287,355,249"/>
-<area shape="poly" title=" " alt="" coords="324,322,413,364,411,368,322,326"/>
-<area shape="poly" title=" " alt="" coords="281,326,213,367,210,362,278,322"/>
-<area shape="rect" title=" " alt="" coords="240,372,320,397"/>
-<area shape="poly" title=" " alt="" coords="298,325,289,360,284,358,293,324"/>
-<area shape="rect" title=" " alt="" coords="344,372,400,397"/>
-<area shape="poly" title=" " alt="" coords="313,322,352,360,348,364,309,326"/>
-<area shape="poly" title=" " alt="" coords="123,251,103,431,98,431,117,251"/>
-<area shape="poly" title=" " alt="" coords="150,248,260,292,258,297,148,253"/>
-<area shape="poly" title=" " alt="" coords="130,249,153,284,186,322,215,345,246,363,243,368,212,349,182,326,148,287,126,252"/>
-<area shape="rect" title=" " alt="" coords="195,299,247,324"/>
-<area shape="poly" title=" " alt="" coords="139,249,195,288,192,293,136,253"/>
-<area shape="poly" title=" " alt="" coords="149,241,527,300,526,305,148,246"/>
-<area shape="poly" title=" " alt="" coords="557,326,483,367,481,363,554,322"/>
-<area shape="poly" title=" " alt="" coords="517,104,529,152,531,211,526,212,524,152,512,105"/>
-<area shape="poly" title=" " alt="" coords="506,106,486,141,482,139,502,103"/>
-<area shape="poly" title=" " alt="" coords="487,106,452,126,418,154,396,184,380,214,375,211,391,181,414,150,449,122,484,102"/>
-<area shape="poly" title=" " alt="" coords="525,102,551,130,577,169,587,190,592,212,590,233,579,252,563,266,538,277,474,293,402,304,339,310,339,305,401,299,473,288,537,272,560,261,575,249,585,231,586,212,582,192,573,171,547,134,521,106"/>
-<area shape="poly" title=" " alt="" coords="548,99,589,118,608,132,624,151,635,177,638,200,633,224,624,252,614,272,600,290,596,287,609,270,619,250,628,222,632,200,630,178,619,153,605,136,586,122,546,104"/>
+<area shape="rect" title="A 3D sphere gemoetry class." alt="" coords="673,5,802,31"/>
+<area shape="rect" title=" " alt="" coords="724,225,801,251"/>
+<area shape="poly" title=" " alt="" coords="745,30,759,78,766,150,766,211,761,211,760,151,753,79,739,32"/>
+<area shape="rect" title=" " alt="" coords="978,79,1038,104"/>
+<area shape="poly" title=" " alt="" coords="781,28,965,76,964,81,780,33"/>
+<area shape="rect" href="material_8cppm.html" title="A material class used for render." alt="" coords="279,79,356,104"/>
+<area shape="poly" title=" " alt="" coords="673,33,370,84,369,79,672,28"/>
+<area shape="rect" href="vec3_8cppm.html" title="A 3D vector class for linear algebra operations." alt="" coords="399,299,452,324"/>
+<area shape="poly" title=" " alt="" coords="752,29,791,69,833,126,849,159,858,191,855,223,839,252,813,272,773,286,724,297,669,304,556,312,465,313,465,308,556,306,668,299,723,291,771,281,810,267,835,249,850,222,852,192,844,161,829,129,786,72,748,33"/>
+<area shape="rect" href="interval_8cppm.html" title="A class for math related interval operations." alt="" coords="592,225,664,251"/>
+<area shape="poly" title=" " alt="" coords="738,32,720,96,705,138,684,179,653,217,648,214,679,176,700,136,715,95,733,30"/>
+<area shape="rect" href="hittable_8cppm.html" title="Interface to represent an object that can be hit by a ray." alt="" coords="628,79,700,104"/>
+<area shape="poly" title=" " alt="" coords="727,33,688,71,684,67,723,29"/>
+<area shape="rect" href="aabb_8cppm.html" title="A class representing a bounding box." alt="" coords="594,152,649,177"/>
+<area shape="poly" title=" " alt="" coords="687,33,649,51,632,64,618,80,613,94,611,109,615,139,610,139,606,109,607,92,614,77,628,60,646,46,685,28"/>
+<area shape="rect" title=" " alt="" coords="25,445,87,471"/>
+<area shape="poly" title=" " alt="" coords="279,96,201,103,156,111,111,124,71,142,38,166,16,198,10,216,8,237,8,313,12,346,21,378,45,432,40,434,16,380,6,347,3,313,3,237,5,215,11,195,34,163,68,138,110,119,155,106,200,98,278,91"/>
+<area shape="rect" href="utils_8cppm.html" title="Some useful math functions and constants." alt="" coords="400,372,451,397"/>
+<area shape="poly" title=" " alt="" coords="322,104,344,196,364,260,389,323,411,359,406,362,384,325,359,262,339,198,317,105"/>
+<area shape="rect" href="random_8cppm.html" title="A module used to create efficient randomness based on the Mersenne Twister algorithm." alt="" coords="211,372,283,397"/>
+<area shape="poly" title=" " alt="" coords="308,106,291,127,276,153,260,208,251,265,248,358,243,358,246,265,254,207,271,151,286,124,304,103"/>
+<area shape="rect" href="hit__record_8cppm.html" title="Data structure to store a hit between a ray and a hittable object." alt="" coords="431,152,518,177"/>
+<area shape="poly" title=" " alt="" coords="344,102,438,144,436,149,342,106"/>
+<area shape="rect" href="ray_8cppm.html" title="A 3D ray vector class." alt="" coords="475,225,517,251"/>
+<area shape="poly" title=" " alt="" coords="333,102,420,175,471,215,468,219,417,179,329,106"/>
+<area shape="poly" title=" " alt="" coords="326,103,416,285,411,287,321,106"/>
+<area shape="rect" href="color_8cppm.html" title="Multiple functions for color handling during rendering." alt="" coords="142,152,197,177"/>
+<area shape="poly" title=" " alt="" coords="295,106,207,148,205,144,292,102"/>
+<area shape="poly" title=" " alt="" coords="400,397,389,400,231,432,101,453,100,448,230,427,387,395,399,392"/>
+<area shape="rect" title=" " alt="" coords="316,445,375,471"/>
+<area shape="poly" title=" " alt="" coords="414,399,370,438,367,434,411,395"/>
+<area shape="rect" title=" " alt="" coords="399,445,478,471"/>
+<area shape="poly" title=" " alt="" coords="430,397,437,431,431,432,425,398"/>
+<area shape="rect" title=" " alt="" coords="211,445,283,471"/>
+<area shape="poly" title=" " alt="" coords="249,398,249,432,244,432,244,398"/>
+<area shape="poly" title=" " alt="" coords="519,174,711,221,710,226,518,179"/>
+<area shape="poly" title=" " alt="" coords="481,177,491,211,486,213,476,178"/>
+<area shape="poly" title=" " alt="" coords="473,179,436,287,431,285,468,177"/>
+<area shape="poly" title=" " alt="" coords="486,253,448,291,444,287,482,249"/>
+<area shape="poly" title=" " alt="" coords="428,324,428,358,423,358,423,324"/>
+<area shape="poly" title=" " alt="" coords="400,326,289,369,287,364,398,321"/>
+<area shape="rect" title=" " alt="" coords="107,372,187,397"/>
+<area shape="poly" title=" " alt="" coords="399,322,201,372,200,367,398,317"/>
+<area shape="rect" title=" " alt="" coords="320,372,376,397"/>
+<area shape="poly" title=" " alt="" coords="415,326,373,364,369,361,411,322"/>
+<area shape="poly" title=" " alt="" coords="160,179,142,201,125,227,101,282,83,339,63,432,57,431,78,338,96,280,120,224,138,197,156,176"/>
+<area shape="poly" title=" " alt="" coords="191,175,395,290,392,294,189,180"/>
+<area shape="poly" title=" " alt="" coords="161,179,146,200,135,226,129,261,130,297,142,359,136,360,125,298,124,261,129,225,142,198,157,176"/>
+<area shape="rect" title=" " alt="" coords="145,225,197,251"/>
+<area shape="poly" title=" " alt="" coords="172,178,173,212,168,212,167,178"/>
+<area shape="poly" title=" " alt="" coords="197,168,579,226,578,232,197,173"/>
+<area shape="poly" title=" " alt="" coords="613,253,454,366,451,362,610,249"/>
+<area shape="poly" title=" " alt="" coords="674,103,749,212,745,215,670,106"/>
+<area shape="poly" title=" " alt="" coords="635,107,519,149,518,144,633,102"/>
+<area shape="poly" title=" " alt="" coords="648,106,584,154,518,217,514,213,581,150,645,102"/>
+<area shape="poly" title=" " alt="" coords="691,102,740,127,792,163,812,184,825,206,827,230,815,252,791,270,754,284,708,295,657,302,552,311,466,313,465,307,551,305,656,297,707,290,752,279,788,266,811,249,822,229,820,208,808,187,789,168,738,132,689,106"/>
+<area shape="poly" title=" " alt="" coords="668,104,669,138,664,178,647,215,642,213,659,177,664,138,663,105"/>
+<area shape="poly" title=" " alt="" coords="659,106,637,142,633,139,655,103"/>
+<area shape="poly" title=" " alt="" coords="603,180,530,221,527,216,600,175"/>
+<area shape="poly" title=" " alt="" coords="612,180,577,214,531,253,462,294,460,290,528,248,574,210,608,176"/>
+<area shape="poly" title=" " alt="" coords="625,177,628,212,623,212,620,178"/>
 </map>
 </div>
 </div><table class="memberdecls">

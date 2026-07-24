@@ -110,6 +110,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae829560b28cd8ad4c47be224adc10c3d" id="r_ae829560b28cd8ad4c47be224adc10c3d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsphere.html#ae829560b28cd8ad4c47be224adc10c3d">hit</a> (const <a class="el" href="classray.html">ray</a> &amp;r, <a class="el" href="classinterval.html">interval</a> ray_t, <a class="el" href="structhit__record.html">hit_record</a> &amp;rec) const override</td></tr>
 <tr class="memdesc:ae829560b28cd8ad4c47be224adc10c3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns if a ray hit the sphere.  <br /></td></tr>
 <tr class="separator:ae829560b28cd8ad4c47be224adc10c3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a634bb0ecebefacc3579cbf19a82ee783" id="r_a634bb0ecebefacc3579cbf19a82ee783"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="classaabb.html">aabb</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsphere.html#a634bb0ecebefacc3579cbf19a82ee783">bounding_box</a> () const noexcept override</td></tr>
+<tr class="separator:a634bb0ecebefacc3579cbf19a82ee783"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classhittable"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classhittable')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classhittable.html">hittable</a></td></tr>
 <tr class="memitem:a112fe4caab98aa663ad8ab363ec9325a inherit pub_methods_classhittable" id="r_a112fe4caab98aa663ad8ab363ec9325a"><td class="memItemLeft" align="right" valign="top">
 virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~hittable</b> ()=default</td></tr>
@@ -243,6 +245,33 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~hittable</b> ()=d
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a634bb0ecebefacc3579cbf19a82ee783" name="a634bb0ecebefacc3579cbf19a82ee783"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a634bb0ecebefacc3579cbf19a82ee783">&#9670;&#160;</a></span>bounding_box()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="classaabb.html">aabb</a> sphere::bounding_box </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">override</span><span class="mlabel">virtual</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classhittable.html">hittable</a>.</p>
+
+</div>
+</div>
 <a id="ae829560b28cd8ad4c47be224adc10c3d" name="ae829560b28cd8ad4c47be224adc10c3d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae829560b28cd8ad4c47be224adc10c3d">&#9670;&#160;</a></span>hit()</h2>
 

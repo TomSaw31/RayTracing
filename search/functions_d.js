@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['x_0',['x',['../classvec3.html#af6433e12bddc09038e32acb0cf5d16e4',1,'vec3']]]
+  ['time_0',['time',['../classray.html#a6460323c084b67ff4d00ac20287b398e',1,'ray']]]
 ];

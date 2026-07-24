@@ -1,0 +1,5 @@
+<map id="bvh_node" name="bvh_node">
+<area shape="rect" id="Node000001" title="Represents a Bounding Volume Hierarchy (BVH)" alt="" coords="5,79,91,104"/>
+<area shape="rect" id="Node000002" href="$classhittable.html" title="Represents an object that can be hit by light ray." alt="" coords="12,5,84,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="51,44,51,79,45,79,45,44"/>
+</map>

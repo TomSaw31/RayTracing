@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['interval_0',['interval',['../classinterval.html',1,'']]]
+  ['dielectric_0',['dielectric',['../classdielectric.html',1,'']]]
 ];

@@ -1,0 +1,6 @@
+<map id="aabb" name="aabb">
+<area shape="rect" id="Node000001" title="A class representing a bounding box in a 3D space." alt="" coords="14,127,69,152"/>
+<area shape="rect" id="Node000002" href="$classinterval.html" title="Represents a real&#45;valued interval that supports standard interval operations." alt="" coords="5,7,77,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="44,47,44,126,39,126,39,47"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="93,8,101,12,104,20,96,31,78,34,77,28,93,26,99,20,97,16,90,13"/>
+</map>

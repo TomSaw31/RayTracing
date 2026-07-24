@@ -99,6 +99,9 @@ constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>interval</b> () 
 <tr class="memitem:aa32d91b707a437e8d99b94677b3096e3" id="r_aa32d91b707a437e8d99b94677b3096e3"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterval.html#aa32d91b707a437e8d99b94677b3096e3">interval</a> (double min, double max) noexcept</td></tr>
 <tr class="memdesc:aa32d91b707a437e8d99b94677b3096e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an interval between the min and max.  <br /></td></tr>
 <tr class="separator:aa32d91b707a437e8d99b94677b3096e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b90d7a431724b8cc45bb8558a522cce" id="r_a7b90d7a431724b8cc45bb8558a522cce"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterval.html#a7b90d7a431724b8cc45bb8558a522cce">interval</a> (const <a class="el" href="classinterval.html">interval</a> &amp;a, const <a class="el" href="classinterval.html">interval</a> &amp;b)</td></tr>
+<tr class="memdesc:a7b90d7a431724b8cc45bb8558a522cce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an interval from two intervals by enclosing the two.  <br /></td></tr>
+<tr class="separator:a7b90d7a431724b8cc45bb8558a522cce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05c5ae6252df3b30bb4c20b40621344b" id="r_a05c5ae6252df3b30bb4c20b40621344b"><td class="memItemLeft" align="right" valign="top">constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterval.html#a05c5ae6252df3b30bb4c20b40621344b">size</a> () const noexcept</td></tr>
 <tr class="memdesc:a05c5ae6252df3b30bb4c20b40621344b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the length/size of the interval.  <br /></td></tr>
 <tr class="separator:a05c5ae6252df3b30bb4c20b40621344b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -111,6 +114,9 @@ constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>interval</b> () 
 <tr class="memitem:a88f89bf0fa6384977e9e75b47104238e" id="r_a88f89bf0fa6384977e9e75b47104238e"><td class="memItemLeft" align="right" valign="top">constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterval.html#a88f89bf0fa6384977e9e75b47104238e">clamp</a> (double x) const noexcept</td></tr>
 <tr class="memdesc:a88f89bf0fa6384977e9e75b47104238e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clamps the given value in the interval If the value is lower than the lower bound it is replaced by the lower bound If the value is higher than the upper bound it is replaced by the upper bound.  <br /></td></tr>
 <tr class="separator:a88f89bf0fa6384977e9e75b47104238e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3919fbe95a18b448b7a2b40a37c1cec8" id="r_a3919fbe95a18b448b7a2b40a37c1cec8"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="classinterval.html">interval</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classinterval.html#a3919fbe95a18b448b7a2b40a37c1cec8">expand</a> (double delta) const</td></tr>
+<tr class="memdesc:a3919fbe95a18b448b7a2b40a37c1cec8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Expand the interval by half of the given delta on each side.  <br /></td></tr>
+<tr class="separator:a3919fbe95a18b448b7a2b40a37c1cec8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -134,7 +140,7 @@ static const <a class="el" href="classinterval.html">interval</a>&#160;</td><td 
 <div class="textblock"><p>Represents a real-valued interval that supports standard interval operations. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aa32d91b707a437e8d99b94677b3096e3" name="aa32d91b707a437e8d99b94677b3096e3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa32d91b707a437e8d99b94677b3096e3">&#9670;&#160;</a></span>interval()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa32d91b707a437e8d99b94677b3096e3">&#9670;&#160;</a></span>interval() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -172,6 +178,51 @@ static const <a class="el" href="classinterval.html">interval</a>&#160;</td><td 
   <table class="params">
     <tr><td class="paramname">min</td><td>The lower bound of the interval </td></tr>
     <tr><td class="paramname">max</td><td>The upper bound of the interval </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7b90d7a431724b8cc45bb8558a522cce" name="a7b90d7a431724b8cc45bb8558a522cce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b90d7a431724b8cc45bb8558a522cce">&#9670;&#160;</a></span>interval() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr interval::interval </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classinterval.html">interval</a> &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classinterval.html">interval</a> &amp;&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates an interval from two intervals by enclosing the two. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>The first interval to contain </td></tr>
+    <tr><td class="paramname">b</td><td>The second interval to contain </td></tr>
   </table>
   </dd>
 </dl>
@@ -248,6 +299,41 @@ static const <a class="el" href="classinterval.html">interval</a>&#160;</td><td 
 <dl class="section return"><dt>Returns</dt><dd>true if the value x is in the interval </dd>
 <dd>
 false if the value x is not in the interval </dd></dl>
+
+</div>
+</div>
+<a id="a3919fbe95a18b448b7a2b40a37c1cec8" name="a3919fbe95a18b448b7a2b40a37c1cec8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3919fbe95a18b448b7a2b40a37c1cec8">&#9670;&#160;</a></span>expand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="classinterval.html">interval</a> interval::expand </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>delta</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Expand the interval by half of the given delta on each side. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">delta</td><td>The total length added to the interval </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The expanded interval by half the delta on each side </dd></dl>
 
 </div>
 </div>

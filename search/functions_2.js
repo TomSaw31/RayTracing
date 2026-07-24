@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['dielectric_0',['dielectric',['../classdielectric.html#a46c900c076da1909d69a52eb0c77c68f',1,'dielectric']]],
-  ['direction_1',['direction',['../classray.html#a54add1f7257c6d6512d0f4c4195a1083',1,'ray']]]
+  ['clamp_0',['clamp',['../classinterval.html#a88f89bf0fa6384977e9e75b47104238e',1,'interval']]],
+  ['clear_1',['clear',['../classhittable__list.html#a4fe24bc0d6934f20e0737a19b6549d29',1,'hittable_list']]],
+  ['contains_2',['contains',['../classinterval.html#aecb0b5eec3bd388e3e6bfc9f78a4ff1e',1,'interval']]]
 ];

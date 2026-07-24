@@ -84,6 +84,7 @@ $(function() {
 <div class="textblock"><code>#include &lt;vector&gt;</code><br />
 <code>#include &lt;cmath&gt;</code><br />
 <code>#include &lt;memory&gt;</code><br />
+<code>import <a class="el" href="aabb_8cppm.html">aabb</a>;</code><br />
 <code>import <a class="el" href="interval_8cppm.html">interval</a>;</code><br />
 <code>import <a class="el" href="hittable_8cppm.html">hittable</a>;</code><br />
 </div><div class="textblock"><div class="dynheader">
@@ -91,45 +92,51 @@ Include dependency graph for hittable_list.cppm:</div>
 <div class="dyncontent">
 <div class="center"><img src="hittable__list_8cppm__incl.png" border="0" usemap="#asrc_2hittable__list_8cppm" alt=""/></div>
 <map name="asrc_2hittable__list_8cppm" id="asrc_2hittable__list_8cppm">
-<area shape="rect" title="A container class used to stores hittable objects." alt="" coords="98,5,261,31"/>
+<area shape="rect" title="A container class used to stores hittable objects." alt="" coords="115,5,278,31"/>
 <area shape="rect" title=" " alt="" coords="5,79,68,104"/>
-<area shape="poly" title=" " alt="" coords="158,33,73,75,71,70,155,28"/>
-<area shape="rect" title=" " alt="" coords="69,445,132,471"/>
-<area shape="poly" title=" " alt="" coords="171,33,152,55,132,87,115,124,109,164,109,313,105,432,99,432,103,313,103,163,110,122,127,84,148,52,166,29"/>
-<area shape="rect" title=" " alt="" coords="427,225,505,251"/>
-<area shape="poly" title=" " alt="" coords="257,28,313,43,371,67,426,102,449,125,468,151,475,166,477,182,475,212,470,212,472,182,469,167,464,153,445,128,423,106,369,72,311,48,255,33"/>
-<area shape="rect" href="interval_8cppm.html" title="A class for math related interval operations." alt="" coords="143,152,215,177"/>
-<area shape="poly" title=" " alt="" coords="182,31,182,138,177,138,177,31"/>
-<area shape="rect" href="hittable_8cppm.html" title="Interface to represent an object that can be hit by a ray." alt="" coords="242,79,314,104"/>
-<area shape="poly" title=" " alt="" coords="197,29,252,68,249,73,194,33"/>
-<area shape="rect" href="utils_8cppm.html" title="Some useful math functions and constants." alt="" coords="161,372,211,397"/>
-<area shape="poly" title=" " alt="" coords="182,178,188,358,183,358,177,178"/>
-<area shape="poly" title=" " alt="" coords="174,399,127,439,123,434,171,395"/>
-<area shape="rect" title=" " alt="" coords="157,445,215,471"/>
-<area shape="poly" title=" " alt="" coords="189,398,189,432,183,432,183,398"/>
-<area shape="rect" title=" " alt="" coords="240,445,319,471"/>
-<area shape="poly" title=" " alt="" coords="203,395,255,435,252,439,199,399"/>
-<area shape="poly" title=" " alt="" coords="315,94,345,100,380,111,413,127,443,150,460,180,467,211,462,213,455,182,439,154,411,131,378,116,344,105,314,99"/>
-<area shape="poly" title=" " alt="" coords="264,106,208,146,205,142,261,102"/>
-<area shape="rect" href="hit__record_8cppm.html" title="Data structure to store a hit between a ray and a hittable object." alt="" coords="341,152,428,177"/>
-<area shape="poly" title=" " alt="" coords="297,102,357,142,354,147,294,106"/>
-<area shape="rect" href="ray_8cppm.html" title="A 3D ray vector class." alt="" coords="297,225,339,251"/>
-<area shape="poly" title=" " alt="" coords="284,104,314,211,309,213,279,105"/>
-<area shape="rect" href="vec3_8cppm.html" title="A 3D vector class for linear algebra operations." alt="" coords="291,299,345,324"/>
-<area shape="poly" title=" " alt="" coords="279,104,277,167,279,209,287,250,304,286,300,288,282,251,274,209,271,167,274,104"/>
-<area shape="poly" title=" " alt="" coords="399,175,444,214,441,218,396,179"/>
-<area shape="poly" title=" " alt="" coords="376,179,340,217,336,213,372,176"/>
-<area shape="poly" title=" " alt="" coords="383,179,354,252,334,288,330,285,349,250,378,177"/>
-<area shape="poly" title=" " alt="" coords="321,251,321,285,315,285,315,251"/>
-<area shape="poly" title=" " alt="" coords="298,326,221,368,218,363,296,322"/>
-<area shape="rect" title=" " alt="" coords="355,372,435,397"/>
-<area shape="poly" title=" " alt="" coords="332,322,374,361,371,364,329,326"/>
-<area shape="rect" title=" " alt="" coords="459,372,515,397"/>
-<area shape="poly" title=" " alt="" coords="346,321,449,364,447,369,344,326"/>
-<area shape="rect" href="random_8cppm.html" title="A module used to create efficient randomness based on the Mersenne Twister algorithm." alt="" coords="259,372,331,397"/>
-<area shape="poly" title=" " alt="" coords="317,325,306,360,301,358,312,324"/>
-<area shape="rect" title=" " alt="" coords="343,445,415,471"/>
-<area shape="poly" title=" " alt="" coords="311,395,357,434,353,438,307,399"/>
+<area shape="poly" title=" " alt="" coords="172,33,76,75,74,71,170,28"/>
+<area shape="rect" title=" " alt="" coords="76,445,139,471"/>
+<area shape="poly" title=" " alt="" coords="185,33,162,55,137,86,117,123,111,143,109,163,109,313,110,432,104,432,103,313,103,163,106,142,112,121,133,83,158,51,181,29"/>
+<area shape="rect" title=" " alt="" coords="513,225,590,251"/>
+<area shape="poly" title=" " alt="" coords="279,21,349,32,426,55,463,72,497,93,528,119,554,151,560,165,563,182,561,212,555,212,558,182,555,167,549,153,524,123,494,97,460,76,424,60,348,37,278,26"/>
+<area shape="rect" href="aabb_8cppm.html" title="A class representing a bounding box." alt="" coords="245,152,300,177"/>
+<area shape="poly" title=" " alt="" coords="205,30,263,139,258,141,201,32"/>
+<area shape="rect" href="interval_8cppm.html" title="A class for math related interval operations." alt="" coords="171,225,243,251"/>
+<area shape="poly" title=" " alt="" coords="200,31,209,211,203,211,195,31"/>
+<area shape="rect" href="hittable_8cppm.html" title="Interface to represent an object that can be hit by a ray." alt="" coords="302,79,374,104"/>
+<area shape="poly" title=" " alt="" coords="221,28,304,70,302,75,218,33"/>
+<area shape="poly" title=" " alt="" coords="264,179,229,217,225,213,260,176"/>
+<area shape="rect" href="ray_8cppm.html" title="A 3D ray vector class." alt="" coords="375,225,418,251"/>
+<area shape="poly" title=" " alt="" coords="294,175,366,216,363,221,291,180"/>
+<area shape="rect" href="vec3_8cppm.html" title="A 3D vector class for linear algebra operations." alt="" coords="334,299,387,324"/>
+<area shape="poly" title=" " alt="" coords="281,176,322,249,346,286,342,289,317,252,276,179"/>
+<area shape="rect" href="utils_8cppm.html" title="Some useful math functions and constants." alt="" coords="177,372,227,397"/>
+<area shape="poly" title=" " alt="" coords="210,251,206,358,200,358,204,251"/>
+<area shape="poly" title=" " alt="" coords="188,399,135,439,132,435,185,395"/>
+<area shape="rect" title=" " alt="" coords="171,445,230,471"/>
+<area shape="poly" title=" " alt="" coords="204,398,204,432,198,432,199,398"/>
+<area shape="rect" title=" " alt="" coords="255,445,333,471"/>
+<area shape="poly" title=" " alt="" coords="218,395,270,435,267,439,215,399"/>
+<area shape="poly" title=" " alt="" coords="393,252,375,288,370,285,388,250"/>
+<area shape="poly" title=" " alt="" coords="336,326,241,369,239,364,334,322"/>
+<area shape="rect" title=" " alt="" coords="251,372,331,397"/>
+<area shape="poly" title=" " alt="" coords="351,326,314,364,310,360,347,322"/>
+<area shape="rect" title=" " alt="" coords="355,372,411,397"/>
+<area shape="poly" title=" " alt="" coords="367,324,378,358,373,360,362,325"/>
+<area shape="rect" href="random_8cppm.html" title="A module used to create efficient randomness based on the Mersenne Twister algorithm." alt="" coords="435,372,507,397"/>
+<area shape="poly" title=" " alt="" coords="380,322,443,362,440,367,377,326"/>
+<area shape="rect" title=" " alt="" coords="435,445,507,471"/>
+<area shape="poly" title=" " alt="" coords="474,398,474,432,469,432,469,398"/>
+<area shape="poly" title=" " alt="" coords="375,92,411,97,452,107,492,124,528,150,538,164,546,180,553,211,547,212,540,182,534,167,524,154,490,128,450,112,410,102,374,97"/>
+<area shape="poly" title=" " alt="" coords="329,106,294,144,291,140,325,103"/>
+<area shape="poly" title=" " alt="" coords="305,106,268,125,250,138,235,154,220,182,212,212,207,211,215,180,231,150,247,134,265,121,303,102"/>
+<area shape="poly" title=" " alt="" coords="345,103,389,211,384,213,340,105"/>
+<area shape="poly" title=" " alt="" coords="342,104,361,284,355,285,337,105"/>
+<area shape="rect" href="hit__record_8cppm.html" title="Data structure to store a hit between a ray and a hittable object." alt="" coords="427,152,513,177"/>
+<area shape="poly" title=" " alt="" coords="360,102,438,143,435,148,358,106"/>
+<area shape="poly" title=" " alt="" coords="485,175,530,214,526,218,481,179"/>
+<area shape="poly" title=" " alt="" coords="460,180,420,218,417,214,456,176"/>
+<area shape="poly" title=" " alt="" coords="469,179,455,213,432,252,412,274,390,292,387,288,408,270,428,249,450,211,464,177"/>
 </map>
 </div>
 </div><table class="memberdecls">

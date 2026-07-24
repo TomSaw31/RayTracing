@@ -1,34 +1,39 @@
 <map id="src/hittable.cppm" name="src/hittable.cppm">
-<area shape="rect" id="Node000001" title="Interface to represent an object that can be hit by a ray." alt="" coords="154,5,289,31"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="23,152,100,177"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="168,33,124,51,104,64,86,80,71,108,65,138,60,137,66,107,82,77,100,60,122,46,166,28"/>
-<area shape="rect" id="Node000003" href="$hit__record_8cppm.html" title="Data structure to store a hit between a ray and a hittable object." alt="" coords="97,79,183,104"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="210,33,165,72,162,68,207,29"/>
-<area shape="rect" id="Node000004" href="$ray_8cppm.html" title="A 3D ray vector class." alt="" coords="189,152,232,177"/>
-<area shape="poly" id="edge17_Node000001_Node000004" title=" " alt="" coords="223,31,215,138,210,138,218,31"/>
-<area shape="rect" id="Node000005" href="$vec3_8cppm.html" title="A 3D vector class for linear algebra operations." alt="" coords="184,225,237,251"/>
-<area shape="poly" id="edge18_Node000001_Node000005" title=" " alt="" coords="229,30,247,93,251,136,247,178,229,215,225,213,241,177,246,136,242,94,224,32"/>
-<area shape="rect" id="Node000014" href="$interval_8cppm.html" title="A class for math related interval operations." alt="" coords="287,225,359,251"/>
-<area shape="poly" id="edge15_Node000001_Node000014" title=" " alt="" coords="233,30,265,77,297,149,318,211,313,213,292,151,260,80,229,33"/>
-<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="129,106,86,145,82,141,126,102"/>
-<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="154,102,192,140,188,144,150,106"/>
-<area shape="poly" id="edge14_Node000003_Node000005" title=" " alt="" coords="147,103,180,176,199,212,194,214,175,179,142,105"/>
-<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="213,178,213,212,208,212,208,178"/>
-<area shape="rect" id="Node000006" title=" " alt="" coords="85,299,165,324"/>
-<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="199,253,151,292,148,288,195,249"/>
-<area shape="rect" id="Node000007" title=" " alt="" coords="5,299,61,324"/>
-<area shape="poly" id="edge7_Node000005_Node000007" title=" " alt="" coords="185,253,75,296,73,291,183,248"/>
-<area shape="rect" id="Node000008" href="$utils_8cppm.html" title="Some useful math functions and constants." alt="" coords="297,299,348,324"/>
-<area shape="poly" id="edge8_Node000005_Node000008" title=" " alt="" coords="230,248,294,289,291,293,227,253"/>
-<area shape="rect" id="Node000012" href="$random_8cppm.html" title="A module used to create efficient randomness based on the Mersenne Twister algorithm." alt="" coords="189,299,261,324"/>
-<area shape="poly" id="edge12_Node000005_Node000012" title=" " alt="" coords="216,250,223,285,218,286,210,252"/>
-<area shape="rect" id="Node000009" title=" " alt="" coords="429,372,491,397"/>
-<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="346,322,427,363,424,368,344,326"/>
-<area shape="rect" id="Node000010" title=" " alt="" coords="243,372,301,397"/>
-<area shape="poly" id="edge10_Node000008_Node000010" title=" " alt="" coords="316,326,290,362,286,359,312,323"/>
-<area shape="rect" id="Node000011" title=" " alt="" coords="326,372,405,397"/>
-<area shape="poly" id="edge11_Node000008_Node000011" title=" " alt="" coords="332,323,354,359,349,362,327,326"/>
-<area shape="rect" id="Node000013" title=" " alt="" coords="147,372,219,397"/>
-<area shape="poly" id="edge13_Node000012_Node000013" title=" " alt="" coords="221,326,199,362,194,359,216,323"/>
-<area shape="poly" id="edge16_Node000014_Node000008" title=" " alt="" coords="325,251,325,285,320,285,320,251"/>
+<area shape="rect" id="Node000001" title="Interface to represent an object that can be hit by a ray." alt="" coords="241,5,375,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="367,152,444,177"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="345,28,379,47,395,61,408,77,416,108,414,138,409,138,411,109,403,80,391,64,376,52,342,33"/>
+<area shape="rect" id="Node000003" href="$aabb_8cppm.html" title="A class representing a bounding box." alt="" coords="175,79,230,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="293,33,232,73,230,69,290,28"/>
+<area shape="rect" id="Node000004" href="$interval_8cppm.html" title="A class for math related interval operations." alt="" coords="103,152,175,177"/>
+<area shape="poly" id="edge20_Node000001_Node000004" title=" " alt="" coords="249,33,204,51,183,64,165,80,149,109,143,139,137,138,144,107,161,77,180,60,202,46,247,28"/>
+<area shape="rect" id="Node000009" href="$ray_8cppm.html" title="A 3D ray vector class." alt="" coords="249,152,292,177"/>
+<area shape="poly" id="edge21_Node000001_Node000009" title=" " alt="" coords="308,32,280,139,274,138,302,30"/>
+<area shape="rect" id="Node000010" href="$vec3_8cppm.html" title="A 3D vector class for linear algebra operations." alt="" coords="263,225,316,251"/>
+<area shape="poly" id="edge22_Node000001_Node000010" title=" " alt="" coords="348,28,390,47,410,61,429,77,450,101,465,126,470,151,458,179,431,205,398,222,363,232,330,237,329,232,362,227,396,217,428,201,454,176,464,151,460,128,446,105,425,81,407,65,387,52,346,33"/>
+<area shape="rect" id="Node000015" href="$hit__record_8cppm.html" title="Data structure to store a hit between a ray and a hittable object." alt="" coords="306,79,393,104"/>
+<area shape="poly" id="edge16_Node000001_Node000015" title=" " alt="" coords="317,30,338,65,333,68,313,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="194,106,160,144,156,140,190,103"/>
+<area shape="poly" id="edge8_Node000003_Node000009" title=" " alt="" coords="216,102,252,140,248,144,212,106"/>
+<area shape="poly" id="edge15_Node000003_Node000010" title=" " alt="" coords="209,103,220,137,240,176,270,214,266,217,235,179,216,139,204,105"/>
+<area shape="rect" id="Node000005" href="$utils_8cppm.html" title="Some useful math functions and constants." alt="" coords="113,299,164,324"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="141,178,141,285,136,285,136,178"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="191,372,254,397"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="154,322,200,361,197,365,150,326"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="5,372,64,397"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="123,326,65,366,62,362,120,322"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="89,372,167,397"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="140,325,134,359,129,358,134,324"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="276,177,285,212,280,213,271,178"/>
+<area shape="poly" id="edge12_Node000010_Node000005" title=" " alt="" coords="266,253,177,295,175,290,264,248"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="369,299,449,324"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="310,248,379,289,376,294,307,253"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="193,299,249,324"/>
+<area shape="poly" id="edge11_Node000010_Node000012" title=" " alt="" coords="280,253,244,290,240,287,276,249"/>
+<area shape="rect" id="Node000013" href="$random_8cppm.html" title="A module used to create efficient randomness based on the Mersenne Twister algorithm." alt="" coords="273,299,345,324"/>
+<area shape="poly" id="edge13_Node000010_Node000013" title=" " alt="" coords="295,250,305,285,300,286,290,252"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="279,372,351,397"/>
+<area shape="poly" id="edge14_Node000013_Node000014" title=" " alt="" coords="313,324,315,358,310,359,308,325"/>
+<area shape="poly" id="edge17_Node000015_Node000002" title=" " alt="" coords="361,103,390,140,386,143,356,106"/>
+<area shape="poly" id="edge18_Node000015_Node000009" title=" " alt="" coords="338,106,295,145,292,141,335,102"/>
+<area shape="poly" id="edge19_Node000015_Node000010" title=" " alt="" coords="347,105,302,214,297,211,342,103"/>
 </map>

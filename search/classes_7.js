@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['sphere_0',['sphere',['../classsphere.html',1,'']]]
+  ['material_0',['material',['../classmaterial.html',1,'']]],
+  ['metal_1',['metal',['../classmetal.html',1,'']]]
 ];
