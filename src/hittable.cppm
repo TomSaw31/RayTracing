@@ -14,6 +14,7 @@ import vec3;
 import ray;
 import interval;
 import hit_record;
+import aabb;
 
 /**
  * @class hittable
@@ -46,6 +47,9 @@ export class hittable {
          */
         [[nodiscard]]
         virtual bool hit(const ray& r, interval ray_t, hit_record& rec) const = 0;
+
+        [[nodiscard]]
+        virtual aabb bounding_box() const noexcept = 0;
 
     protected:
         constexpr hittable() noexcept = default;

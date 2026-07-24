@@ -73,7 +73,6 @@ export class camera {
                     std::clog << "\rScanlines remaining: " << remaining << "    " << std::flush;
                 }
             });
-            
             std::println(std::cout, "P3\n{} {}\n255", image_width, image_height);
 
             for(int j = 0; j < image_height; ++j) {
@@ -81,7 +80,8 @@ export class camera {
                     write_color(std::cout, image_buffer[j * image_width + i]);
                 }
             }
-            std::clog << "\rDone.                  \n";
+    
+            std::clog << "\nDone.\n";
         }
     
     private:

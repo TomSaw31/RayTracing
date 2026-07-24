@@ -23,6 +23,8 @@ target_sources(RayTracing
             src/vec3.cppm
             src/random.cppm
             src/utils.cppm
+            src/aabb.cppm
+            src/bvh.cppm
 )
 
 target_include_directories(RayTracing PRIVATE include/raytracer)

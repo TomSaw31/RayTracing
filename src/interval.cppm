@@ -30,6 +30,17 @@ export class interval {
         constexpr interval(double min, double max) noexcept : min{min}, max{max} {}
 
         /**
+         * @brief Creates an interval from two intervals by enclosing the two
+         * 
+         * @param a The first interval to contain
+         * @param b The second interval to contain
+         */
+        constexpr interval(const interval& a, const interval& b) {
+            min = a.min <= b.min ? a.min : b.min;
+            max = a.max >= b.max ? a.max : b.max;
+        }
+
+        /**
          * @brief Returns the length/size of the interval
          * 
          * @return The length/size of the interval
@@ -76,6 +87,18 @@ export class interval {
             if (x < min) return min;
             if (x > max) return max;
             return x;
+        }
+
+        /**
+         * @brief Expand the interval by half of the given delta on each side
+         * 
+         * @param delta The total length added to the interval
+         * @return The expanded interval by half the delta on each side
+         */
+        [[nodiscard]]
+        constexpr interval expand(double delta) const {
+            auto padding = delta / 2.0;
+            return interval(min - padding, max + padding);
         }
         
         static const interval empty, universe;

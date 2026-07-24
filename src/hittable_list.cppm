@@ -13,6 +13,7 @@ export module hittable_list;
 
 import hittable;
 import interval;
+import aabb;
 
 /**
  * @class hittable_list
@@ -20,6 +21,7 @@ import interval;
  */
 export class hittable_list : public hittable {
     public:
+        std::vector<std::shared_ptr<hittable>> objects;
         /**
          * @brief Construct a new hittable list object
          */
@@ -47,6 +49,7 @@ export class hittable_list : public hittable {
          * @param object The object to add to the list
          */
         void add(std::shared_ptr<hittable> object) {
+            bbox = aabb(bbox, object->bounding_box());
             objects.push_back(std::move(object));
         }
 
@@ -54,7 +57,7 @@ export class hittable_list : public hittable {
          * @brief Returns if a ray hit one the objects in the list
          * 
          * @param r The ray vector
-         * @param ray_t The valid interval [t_min, t_max] along the ray's trajectory where intersections are allowed to register.
+         * @param ray_t The valid interval [t_min, t_max] along the ray's trajectory where intersections are allowed to register
          * @param rec The hit record used to store hit information if a hit occured
          * @return true if the ray vector hit at least one object in the 3D space
          * @return false if the ray did not hit at least one object in the 3D space
@@ -74,6 +77,16 @@ export class hittable_list : public hittable {
             }
             return hit_anything;
         }
+
+        /**
+         * @brief Returns the bounding box containing every hittable object from the list
+         * 
+         * @return The bounding box containing all hittable objects from the list
+         */
+        constexpr aabb bounding_box() const noexcept override {
+            return bbox;
+        }
+
     private:
-        std::vector<std::shared_ptr<hittable>> objects;
+        aabb bbox;
 };

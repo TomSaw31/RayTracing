@@ -14,6 +14,7 @@ import vec3;
 import hittable;
 import interval;
 import material;
+import aabb;
 
 /**
  * @class sphere
@@ -29,7 +30,10 @@ export class sphere : public hittable {
          * @param radius The radius of the sphere
          * @param mat the material used to render the sphere
          */
-        constexpr sphere(const point3& static_center, double radius, std::shared_ptr<material> mat) noexcept : center{static_center, vec3{0,0,0}}, radius{std::max(0.0, radius)}, mat{std::move(mat)} {}
+        constexpr sphere(const point3& static_center, double radius, std::shared_ptr<material> mat) noexcept : center{static_center, vec3{0,0,0}}, radius{std::max(0.0, radius)}, mat{std::move(mat)} {
+            auto rvec = vec3(radius, radius, radius);
+            bbox = aabb{static_center - rvec, static_center + rvec};
+        }
 
         /**
          * @brief Constructs a new moving sphere
@@ -39,7 +43,12 @@ export class sphere : public hittable {
          * @param radius The radius of the sphere
          * @param mat the material used to render the sphere
          */
-        constexpr sphere(const point3& center1, const point3& center2, double radius, std::shared_ptr<material> mat) noexcept : center{center1, center2 - center1}, radius{std::max(0.0, radius)}, mat{std::move(mat)} {}
+        constexpr sphere(const point3& center1, const point3& center2, double radius, std::shared_ptr<material> mat) noexcept : center{center1, center2 - center1}, radius{std::max(0.0, radius)}, mat{std::move(mat)} {
+            auto rvec = vec3{radius, radius, radius};
+            aabb box1{center.at(0) - rvec, center.at(0) + rvec};
+            aabb box2{center.at(1) - rvec, center.at(1) + rvec};
+            bbox = aabb{box1, box2};
+        }
 
         /**
          * @brief Returns if a ray hit the sphere
@@ -80,8 +89,14 @@ export class sphere : public hittable {
             return true;
         }
 
+        [[nodiscard]]
+        constexpr aabb bounding_box() const noexcept override {
+            return bbox;
+        }
+
     private:
         ray center;
         double radius;
         std::shared_ptr<material> mat;
+        aabb bbox;
 };

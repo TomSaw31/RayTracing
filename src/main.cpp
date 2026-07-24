@@ -7,6 +7,7 @@ import material;
 import camera;
 import color;
 import random;
+import bvh;
 
 int main() {
     // hittable_list world;
@@ -22,6 +23,8 @@ int main() {
     // world.add(std::make_shared<sphere>(point3(0.0,    0.0, -1.2),   0.5, material_left));
     // world.add(std::make_shared<sphere>(point3(0.0,    0.0, -1.2),   0.4, material_bubble));
     // world.add(std::make_shared<sphere>(point3( 1.0,    0.0, -1.0),   0.5, material_right));
+
+    // world = hittable_list(std::make_shared<bvh_node>(world));
 
     // camera cam;
 
@@ -83,6 +86,8 @@ int main() {
 
     auto material3 = std::make_shared<metal>(color(0.7, 0.6, 0.5), 0.0);
     world.add(std::make_shared<sphere>(point3(4, 1, 0), 1.0, material3));
+
+    world = hittable_list(std::make_shared<bvh_node>(world));
 
     camera cam;
 
