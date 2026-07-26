@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['random_0',['random',['../classvec3.html#ac7909af0c2e2f032caf85030c582092c',1,'vec3::random()'],['../classvec3.html#a91d5a762d888962d73906242950367aa',1,'vec3::random(double min, double max)']]],
-  ['ray_1',['ray',['../classray.html#af14acea709c2e673c3c0f240c51cf503',1,'ray::ray() noexcept'],['../classray.html#a0d64590a0921bdcd4398a36e63393830',1,'ray::ray(const point3 &amp;origin, const vec3 &amp;direction, double time) noexcept'],['../classray.html#ab6cead15ab6bf15a7e5c125f2704e858',1,'ray::ray(const point3 &amp;origin, const vec3 &amp;direction)']]],
-  ['render_2',['render',['../classcamera.html#adadc151af214979cdd171d4ec083255f',1,'camera']]]
+  ['pixel_5fdata_0',['pixel_data',['../classimage.html#a155712e9487e43e6e8388a14aa9d6e81',1,'image']]]
 ];

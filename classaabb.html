@@ -72,6 +72,7 @@ $(function() {
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="classaabb-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">aabb Class Reference<span class="mlabels"><span class="mlabel">export</span></span><div class="ingroups">module <a class="el" href="module_aabb.html">aabb</a></div></div></div>
 </div><!--header-->
@@ -84,9 +85,10 @@ Collaboration diagram for aabb:</div>
 <div class="dyncontent">
 <div class="center"><img src="classaabb__coll__graph.png" border="0" usemap="#aaabb_coll__map" alt="Collaboration graph"/></div>
 <map name="aaabb_coll__map" id="aaabb_coll__map">
-<area shape="rect" title="A class representing a bounding box in a 3D space." alt="" coords="14,127,69,152"/>
+<area shape="rect" title="A class representing a bounding box in a 3D space." alt="" coords="14,129,69,154"/>
+<area shape="poly" title=" " alt="" coords="84,129,92,133,95,142,87,153,69,155,69,149,84,148,90,141,88,137,81,134"/>
 <area shape="rect" href="classinterval.html" title="Represents a real&#45;valued interval that supports standard interval operations." alt="" coords="5,7,77,33"/>
-<area shape="poly" title=" " alt="" coords="44,47,44,126,39,126,39,47"/>
+<area shape="poly" title=" " alt="" coords="44,46,44,128,39,128,39,46"/>
 <area shape="poly" title=" " alt="" coords="93,8,101,12,104,20,96,31,78,34,77,28,93,26,99,20,97,16,90,13"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
@@ -112,6 +114,9 @@ constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>aabb</b> () noex
 <tr class="memitem:a41a77409a0d772ee674050e174e3771d" id="r_a41a77409a0d772ee674050e174e3771d"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classaabb.html#a41a77409a0d772ee674050e174e3771d">hit</a> (const <a class="el" href="classray.html">ray</a> &amp;r, <a class="el" href="classinterval.html">interval</a> ray_t) const</td></tr>
 <tr class="memdesc:a41a77409a0d772ee674050e174e3771d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns if a ray hit the bounding box.  <br /></td></tr>
 <tr class="separator:a41a77409a0d772ee674050e174e3771d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae264f968b8dc21ee3f746f33fd65963d" id="r_ae264f968b8dc21ee3f746f33fd65963d"><td class="memItemLeft" align="right" valign="top">constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classaabb.html#ae264f968b8dc21ee3f746f33fd65963d">longest_axis</a> () const</td></tr>
+<tr class="memdesc:ae264f968b8dc21ee3f746f33fd65963d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the index of the longest axis of the bounding box.  <br /></td></tr>
+<tr class="separator:ae264f968b8dc21ee3f746f33fd65963d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -124,6 +129,15 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a9861a50e01a869306baf38754f8286e5" id="r_a9861a50e01a869306baf38754f8286e5"><td class="memItemLeft" align="right" valign="top"><a id="a9861a50e01a869306baf38754f8286e5" name="a9861a50e01a869306baf38754f8286e5"></a>
 <a class="el" href="classinterval.html">interval</a>&#160;</td><td class="memItemRight" valign="bottom"><b>z</b></td></tr>
 <tr class="separator:a9861a50e01a869306baf38754f8286e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a67bb33230f0f85f7d8c0e2c937815d60" id="r_a67bb33230f0f85f7d8c0e2c937815d60"><td class="memItemLeft" align="right" valign="top"><a id="a67bb33230f0f85f7d8c0e2c937815d60" name="a67bb33230f0f85f7d8c0e2c937815d60"></a>
+static const <a class="el" href="classaabb.html">aabb</a>&#160;</td><td class="memItemRight" valign="bottom"><b>empty</b> = <a class="el" href="classaabb.html">aabb</a>(interval::empty, interval::empty, interval::empty)</td></tr>
+<tr class="separator:a67bb33230f0f85f7d8c0e2c937815d60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79af351d4c6bf6cc9d8a4f52887391fc" id="r_a79af351d4c6bf6cc9d8a4f52887391fc"><td class="memItemLeft" align="right" valign="top"><a id="a79af351d4c6bf6cc9d8a4f52887391fc" name="a79af351d4c6bf6cc9d8a4f52887391fc"></a>
+static const <a class="el" href="classaabb.html">aabb</a>&#160;</td><td class="memItemRight" valign="bottom"><b>universe</b> = <a class="el" href="classaabb.html">aabb</a>(interval::universe, interval::universe, interval::universe)</td></tr>
+<tr class="separator:a79af351d4c6bf6cc9d8a4f52887391fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class representing a bounding box in a 3D space. </p>
@@ -351,6 +365,34 @@ Public Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>true if the incoming ray hit the bounding box </dd>
 <dd>
 false if the incoming ray did not hit the bounding box </dd></dl>
+
+</div>
+</div>
+<a id="ae264f968b8dc21ee3f746f33fd65963d" name="ae264f968b8dc21ee3f746f33fd65963d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae264f968b8dc21ee3f746f33fd65963d">&#9670;&#160;</a></span>longest_axis()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr int aabb::longest_axis </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the index of the longest axis of the bounding box. </p>
+<dl class="section return"><dt>Returns</dt><dd>The index of the longest axis of the bounding box </dd></dl>
 
 </div>
 </div>
