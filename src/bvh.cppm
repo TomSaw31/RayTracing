@@ -36,7 +36,12 @@ export class bvh_node : public hittable {
          * @param end The end time of the moving objects
          */
         constexpr bvh_node(std::vector<std::shared_ptr<hittable>> objects, size_t start, size_t end) {
-            int axis = random_int(0, 2);
+            bbox = aabb::empty;
+            for(size_t object_index = start; object_index < end; ++object_index) {
+                bbox = aabb(bbox, objects[object_index]->bounding_box());
+            }
+            
+            int axis = bbox.longest_axis();
 
             auto comparator = (axis == 0) ? box_x_compare : (axis == 1) ? box_y_compare : box_z_compare;
 
@@ -54,12 +59,10 @@ export class bvh_node : public hittable {
                 left = make_shared<bvh_node>(objects, start, mid);
                 right = make_shared<bvh_node>(objects, mid, end);
             }
-
-            bbox = aabb{left->bounding_box(), right->bounding_box()};
         }
 
         /**
-         * @brief Checks if the incoming hit an objecct in the hierarchy
+         * @brief Checks if the incoming hit an object in the hierarchy
          * 
          * @param r The incoming ray
          * @param ray_t The valid interval [t_min, t_max] along the ray's trajectory where intersections are allowed to register. 

@@ -34,6 +34,7 @@ export class hittable {
         hittable& operator=(const hittable&) = delete;
 
         hittable(hittable&&) noexcept = default;
+        
         hittable& operator=(hittable&&) noexcept = default;
 
         /**
@@ -48,6 +49,11 @@ export class hittable {
         [[nodiscard]]
         virtual bool hit(const ray& r, interval ray_t, hit_record& rec) const = 0;
 
+        /**
+         * @brief Returns the hittable object's bounding box
+         * 
+         * @return The bounding box of the hittable object
+         */
         [[nodiscard]]
         virtual aabb bounding_box() const noexcept = 0;
 

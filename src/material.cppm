@@ -6,6 +6,7 @@
 module;
 
 #include <cmath>
+#include <memory>
 
 export module material;
 
@@ -15,6 +16,7 @@ import ray;
 import hit_record;
 import random;
 import utils;
+import texture;
 
 /**
  * @class material
@@ -58,7 +60,8 @@ export class lambertian : public material {
          *
          * @param albedo The color of the surface
          */
-        explicit lambertian(const color& albedo) noexcept : albedo{albedo} {}
+        explicit lambertian(const color& albedo) noexcept : tex{std::make_shared<solid_color>(albedo)} {}
+        explicit lambertian(std::shared_ptr<texture> tex) : tex{tex} {}
 
         [[nodiscard]]
         bool scatter(const ray& r_in, const hit_record& rec, color& attenuation, ray& scattered) const override {
@@ -69,12 +72,13 @@ export class lambertian : public material {
             }
 
             scattered = ray(rec.p, scatter_direction, r_in.time());
-            attenuation = albedo;
+            attenuation = tex->value(rec.u, rec.v, rec.p);
             return true;
         }
     
     private:
         color albedo;
+        std::shared_ptr<texture> tex;
 
 };
 

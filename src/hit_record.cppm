@@ -23,6 +23,8 @@ export struct hit_record {
         vec3 normal{};
         std::shared_ptr<const material> mat{nullptr};
         double t{0.0};
+        double u{0.0};
+        double v{0.0};
         bool front_face{false};
 
         /**

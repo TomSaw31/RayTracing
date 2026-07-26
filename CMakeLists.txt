@@ -25,6 +25,8 @@ target_sources(RayTracing
             src/utils.cppm
             src/aabb.cppm
             src/bvh.cppm
+            src/texture.cppm
+            src/image.cppm
 )
 
 target_include_directories(RayTracing PRIVATE include/raytracer)
