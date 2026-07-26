@@ -20,7 +20,6 @@ import utils;
 /**
  * @class sphere
  * @brief Represents a simple representation of a sphere to render in a 3D space
- * 
  */
 export class sphere : public hittable {
     public:
