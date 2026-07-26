@@ -1,3 +1,11 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" href="$classvec3.html" title="Represents a 3D vector or point in space." alt="" coords="5,5,59,31"/>
+<area shape="rect" id="Node000000" href="$classtexture.html" title="Represents a texture used on a geometry object for render." alt="" coords="5,80,75,105"/>
+<area shape="rect" id="Node000001" href="$classchecker__texture.html" title="A class representing a checker pattern texture." alt="" coords="123,5,249,31"/>
+<area shape="poly" id="edge7_Node000000_Node000001" title=" " alt="" coords="69,70,121,40,147,28,149,33,124,44,72,75"/>
+<area shape="rect" id="Node000002" href="$classimage__texture.html" title="A class representing an image loaded from a filename on a texture." alt="" coords="127,55,245,80"/>
+<area shape="poly" id="edge8_Node000000_Node000002" title=" " alt="" coords="88,82,127,75,128,80,89,87"/>
+<area shape="rect" id="Node000003" href="$classnoise__texture.html" title="A class used to generates random texutres containing a perlin noise pattern." alt="" coords="131,104,241,129"/>
+<area shape="poly" id="edge9_Node000000_Node000003" title=" " alt="" coords="89,98,131,105,130,110,88,103"/>
+<area shape="rect" id="Node000004" href="$classsolid__color.html" title="A solid texture with a simple and unique color." alt="" coords="140,153,232,179"/>
+<area shape="poly" id="edge10_Node000000_Node000004" title=" " alt="" coords="74,111,124,138,152,151,150,156,121,143,72,115"/>
 </map>

@@ -82,59 +82,75 @@ $(function() {
 <p>A texture class used for render.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;memory&gt;</code><br />
+<code>#include &lt;cmath&gt;</code><br />
+<code>import <a class="el" href="perlin_8cppm.html">perlin</a>;</code><br />
 <code>import <a class="el" href="interval_8cppm.html">interval</a>;</code><br />
-<code>import <a class="el" href="color_8cppm.html">color</a>;</code><br />
 <code>import image;</code><br />
+<code>import <a class="el" href="color_8cppm.html">color</a>;</code><br />
 <code>import <a class="el" href="vec3_8cppm.html">vec3</a>;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for texture.cppm:</div>
 <div class="dyncontent">
 <div class="center"><img src="texture_8cppm__incl.png" border="0" usemap="#asrc_2texture_8cppm" alt=""/></div>
 <map name="asrc_2texture_8cppm" id="asrc_2texture_8cppm">
-<area shape="rect" title="A texture class used for render." alt="" coords="86,5,218,31"/>
+<area shape="rect" title="A texture class used for render." alt="" coords="154,5,286,31"/>
 <area shape="rect" title=" " alt="" coords="5,79,83,104"/>
-<area shape="poly" title=" " alt="" coords="136,33,75,73,72,69,133,28"/>
-<area shape="rect" href="interval_8cppm.html" title="A class for math related interval operations." alt="" coords="25,152,97,177"/>
-<area shape="poly" title=" " alt="" coords="147,33,78,142,74,139,142,30"/>
-<area shape="rect" href="color_8cppm.html" title="Multiple functions for color handling during rendering." alt="" coords="158,79,213,104"/>
-<area shape="poly" title=" " alt="" coords="160,30,177,65,172,67,155,32"/>
-<area shape="rect" href="vec3_8cppm.html" title="A 3D vector class for linear algebra operations." alt="" coords="300,152,353,177"/>
-<area shape="poly" title=" " alt="" coords="168,29,227,77,304,141,301,145,224,81,165,33"/>
-<area shape="rect" href="utils_8cppm.html" title="Some useful math functions and constants." alt="" coords="172,225,223,251"/>
-<area shape="poly" title=" " alt="" coords="84,175,164,217,162,221,82,180"/>
-<area shape="rect" title=" " alt="" coords="75,299,138,324"/>
-<area shape="poly" title=" " alt="" coords="184,253,134,292,131,288,181,249"/>
-<area shape="rect" title=" " alt="" coords="265,299,324,324"/>
-<area shape="poly" title=" " alt="" coords="215,249,269,288,266,292,211,253"/>
-<area shape="rect" title=" " alt="" coords="162,299,241,324"/>
-<area shape="poly" title=" " alt="" coords="201,251,203,285,197,285,195,251"/>
-<area shape="poly" title=" " alt="" coords="167,106,95,147,92,143,164,102"/>
-<area shape="poly" title=" " alt="" coords="184,105,118,287,113,285,179,103"/>
-<area shape="rect" title=" " alt="" coords="247,225,327,251"/>
-<area shape="poly" title=" " alt="" coords="189,103,196,138,213,176,233,198,256,216,252,220,229,202,208,179,191,139,184,105"/>
-<area shape="rect" title=" " alt="" coords="223,152,275,177"/>
-<area shape="poly" title=" " alt="" coords="198,103,232,140,228,144,194,106"/>
-<area shape="poly" title=" " alt="" coords="209,102,293,143,290,148,207,106"/>
-<area shape="poly" title=" " alt="" coords="307,180,232,221,230,216,305,175"/>
-<area shape="poly" title=" " alt="" coords="322,179,302,215,298,212,318,176"/>
-<area shape="rect" title=" " alt="" coords="447,225,503,251"/>
-<area shape="poly" title=" " alt="" coords="352,175,439,217,437,222,349,180"/>
-<area shape="rect" href="random_8cppm.html" title="A module used to create efficient randomness based on the Mersenne Twister algorithm." alt="" coords="351,225,423,251"/>
-<area shape="poly" title=" " alt="" coords="339,176,370,213,366,217,335,179"/>
-<area shape="rect" title=" " alt="" coords="351,299,423,324"/>
-<area shape="poly" title=" " alt="" coords="389,251,389,285,384,285,384,251"/>
+<area shape="poly" title=" " alt="" coords="193,33,87,76,85,71,191,28"/>
+<area shape="rect" title=" " alt="" coords="458,372,521,397"/>
+<area shape="poly" title=" " alt="" coords="286,16,372,23,419,32,464,45,505,63,538,89,560,122,566,141,568,163,568,240,562,276,548,310,530,340,512,363,507,360,525,337,543,307,557,274,563,239,563,163,561,143,555,124,534,92,502,68,462,50,418,37,372,28,286,21"/>
+<area shape="rect" href="perlin_8cppm.html" title="A class used to generate perlin noise." alt="" coords="241,79,300,104"/>
+<area shape="poly" title=" " alt="" coords="231,29,257,66,252,69,226,33"/>
+<area shape="rect" href="color_8cppm.html" title="Multiple functions for color handling during rendering." alt="" coords="310,152,365,177"/>
+<area shape="poly" title=" " alt="" coords="249,28,283,48,314,77,330,107,337,138,332,139,325,109,310,80,280,52,246,33"/>
+<area shape="rect" href="interval_8cppm.html" title="A class for math related interval operations." alt="" coords="149,225,221,251"/>
+<area shape="poly" title=" " alt="" coords="201,33,175,53,154,80,145,106,144,127,155,176,171,213,167,215,149,178,138,127,140,104,150,77,171,49,197,29"/>
+<area shape="rect" href="vec3_8cppm.html" title="A 3D vector class for linear algebra operations." alt="" coords="245,225,299,251"/>
+<area shape="poly" title=" " alt="" coords="223,31,232,103,248,162,265,212,260,213,243,164,227,105,218,31"/>
+<area shape="poly" title=" " alt="" coords="299,102,336,120,381,147,427,182,466,224,483,249,494,270,499,294,499,324,495,359,490,358,493,324,493,295,489,272,479,251,462,227,423,186,378,152,334,125,296,107"/>
+<area shape="rect" href="random_8cppm.html" title="A module used to create efficient randomness based on the Mersenne Twister algorithm." alt="" coords="75,299,147,324"/>
+<area shape="poly" title=" " alt="" coords="257,106,200,155,167,189,140,227,126,257,118,286,113,284,121,255,135,224,163,185,196,151,253,102"/>
+<area shape="poly" title=" " alt="" coords="284,103,319,140,315,144,280,106"/>
+<area shape="poly" title=" " alt="" coords="273,104,274,212,269,212,268,104"/>
+<area shape="rect" title=" " alt="" coords="71,372,143,397"/>
+<area shape="poly" title=" " alt="" coords="113,324,111,359,105,358,107,324"/>
+<area shape="poly" title=" " alt="" coords="366,173,404,193,424,207,441,224,461,257,476,293,489,358,484,359,470,295,457,259,437,227,420,211,402,197,364,178"/>
+<area shape="rect" title=" " alt="" coords="325,299,405,324"/>
+<area shape="poly" title=" " alt="" coords="342,177,363,284,358,285,337,178"/>
+<area shape="rect" title=" " alt="" coords="374,225,426,251"/>
+<area shape="poly" title=" " alt="" coords="350,176,383,213,379,217,346,179"/>
+<area shape="poly" title=" " alt="" coords="314,180,223,222,221,217,312,175"/>
+<area shape="poly" title=" " alt="" coords="329,179,294,217,290,213,325,176"/>
+<area shape="rect" href="utils_8cppm.html" title="Some useful math functions and constants." alt="" coords="171,299,221,324"/>
+<area shape="poly" title=" " alt="" coords="190,251,195,285,190,286,184,251"/>
+<area shape="poly" title=" " alt="" coords="222,318,234,321,445,371,444,376,233,327,221,323"/>
+<area shape="rect" title=" " alt="" coords="167,372,225,397"/>
+<area shape="poly" title=" " alt="" coords="199,324,199,358,193,358,193,324"/>
+<area shape="rect" title=" " alt="" coords="250,372,329,397"/>
+<area shape="poly" title=" " alt="" coords="213,322,265,361,262,366,209,326"/>
+<area shape="poly" title=" " alt="" coords="247,253,151,295,148,291,245,248"/>
+<area shape="poly" title=" " alt="" coords="289,249,341,288,338,292,285,253"/>
+<area shape="poly" title=" " alt="" coords="262,253,220,291,217,287,258,249"/>
+<area shape="rect" title=" " alt="" coords="245,299,301,324"/>
+<area shape="poly" title=" " alt="" coords="275,251,276,285,270,285,270,251"/>
 </map>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtexture.html">texture</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a texture used on a geometry object for render.  <a href="classtexture.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsolid__color.html">solid_color</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A solid texture with a simple and unique color.  <a href="classsolid__color.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classchecker__texture.html">checker_texture</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A class representing a checker pattern texture.  <a href="classchecker__texture.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classimage__texture.html">image_texture</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A class representing an image loaded from a filename on a texture.  <a href="classimage__texture.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnoise__texture.html">noise_texture</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A class used to generates random texutres containing a perlin noise pattern.  <a href="classnoise__texture.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
