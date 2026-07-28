@@ -68,7 +68,7 @@ public:
      * @return The turbulence value
      */
     [[nodiscard]]
-    constepxr double turb(const point3& p, int depth) const noexcept {
+    constexpr double turb(const point3& p, int depth) const noexcept {
         auto acc = 0.0;
         auto temp_p = p;
         auto weight = 1.0;

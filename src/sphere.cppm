@@ -1,6 +1,6 @@
 /**
  * @file sphere.cppm
- * @brief A 3D sphere gemoetry class
+ * @brief A 3D sphere geometry class
 */
 
 module;

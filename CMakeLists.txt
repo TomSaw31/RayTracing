@@ -28,10 +28,7 @@ target_sources(RayTracing
             src/texture.cppm
             src/image.cppm
             src/perlin.cppm
+            src/quad.cppm
 )
 
 target_include_directories(RayTracing PRIVATE include/raytracer)
-
-if(MSVC)
-    add_compile_options(/showIncludes-)
-endif()
