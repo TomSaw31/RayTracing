@@ -1,10 +1,8 @@
 var searchData=
 [
-  ['scatter_0',['scatter',['../classmaterial.html#ac5fce09bcf5a5a87dd49290810815e31',1,'material::scatter()'],['../classlambertian.html#addbce7ba60f1ff30067ee9de362b12a7',1,'lambertian::scatter()'],['../classmetal.html#a7e934504e51b2c6bad3f073021ea696d',1,'metal::scatter()'],['../classdielectric.html#aefd3b900c7e10ab92ecb127659a83d6e',1,'dielectric::scatter()']]],
-  ['set_5fface_5fnormal_1',['set_face_normal',['../structhit__record.html#a3debf7734a30aad9384c517129b39751',1,'hit_record']]],
-  ['size_2',['size',['../classinterval.html#a05c5ae6252df3b30bb4c20b40621344b',1,'interval']]],
-  ['solid_5fcolor_3',['solid_color',['../classsolid__color.html',1,'solid_color'],['../classsolid__color.html#a7a2e05ff384ce2d6183580b79895f3ea',1,'solid_color::solid_color(const color &amp;albedo) noexcept'],['../classsolid__color.html#a0929a735ccbe13ebd107adbbb0f864bb',1,'solid_color::solid_color(double red, double green, double blue) noexcept']]],
-  ['sphere_4',['sphere',['../classsphere.html',1,'sphere'],['../classsphere.html#a410f0e1f931049dd2c97209246c9cf6e',1,'sphere::sphere(const point3 &amp;static_center, double radius, std::shared_ptr&lt; material &gt; mat) noexcept'],['../classsphere.html#aec699d3410954071ae3e9caeb3bdf08a',1,'sphere::sphere(const point3 &amp;center1, const point3 &amp;center2, double radius, std::shared_ptr&lt; material &gt; mat) noexcept']]],
-  ['sphere_2ecppm_5',['sphere.cppm',['../sphere_8cppm.html',1,'']]],
-  ['surrounds_6',['surrounds',['../classinterval.html#afe882e51a78ad502aea75546939f993c',1,'interval']]]
+  ['random_0',['random',['../classvec3.html#ac7909af0c2e2f032caf85030c582092c',1,'vec3::random()'],['../classvec3.html#a91d5a762d888962d73906242950367aa',1,'vec3::random(double min, double max)']]],
+  ['random_2ecppm_1',['random.cppm',['../random_8cppm.html',1,'']]],
+  ['ray_2',['ray',['../classray.html',1,'ray'],['../classray.html#af14acea709c2e673c3c0f240c51cf503',1,'ray::ray() noexcept'],['../classray.html#a0d64590a0921bdcd4398a36e63393830',1,'ray::ray(const point3 &amp;origin, const vec3 &amp;direction, double time) noexcept'],['../classray.html#ab6cead15ab6bf15a7e5c125f2704e858',1,'ray::ray(const point3 &amp;origin, const vec3 &amp;direction)']]],
+  ['ray_2ecppm_3',['ray.cppm',['../ray_8cppm.html',1,'']]],
+  ['render_4',['render',['../classcamera.html#adadc151af214979cdd171d4ec083255f',1,'camera']]]
 ];

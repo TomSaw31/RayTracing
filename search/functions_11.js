@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['x_0',['x',['../classvec3.html#af6433e12bddc09038e32acb0cf5d16e4',1,'vec3']]]
+  ['width_0',['width',['../classimage.html#a12336fcc42501b9bff155f63c623cc36',1,'image']]]
 ];

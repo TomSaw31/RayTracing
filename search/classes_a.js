@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ray_0',['ray',['../classray.html',1,'']]]
+  ['quad_0',['quad',['../classquad.html',1,'']]]
 ];

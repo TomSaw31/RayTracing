@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['texture_0',['texture',['../classtexture.html',1,'']]]
+  ['solid_5fcolor_0',['solid_color',['../classsolid__color.html',1,'']]],
+  ['sphere_1',['sphere',['../classsphere.html',1,'']]]
 ];
